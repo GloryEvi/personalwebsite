@@ -11,6 +11,18 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "rewv04Fx5SKJUlLDb",
+        });
+      })();
+    </script>
+    <script src="/assets/script.js"></script>
   </head>
   <body class="is-preload">
     <!-- Sidebar -->
@@ -41,9 +53,16 @@
             innovative and impactful web solutions. My journey in tech is driven
             by a love for learning and a commitment to excellence, as I strive
             to make a meaningful difference in the digital world. Explore my
-            work and join me on this exciting journey! <br />
-            <br/>
-            <a href="https://glory-evi-portfolio.netlify.app/" class="button" style="background-color: blue;">Resume</a>
+            work and join me on this exciting journey!
+            <div>
+            <a
+              href="https://drive.google.com/file/d/1ZdG77O9ti4XN9vQsHXRw7bKR-Cys76sp/"
+              target="_blank"
+              class="button"
+              style="background-color: blue"
+              >Resume</a
+            >
+            </div>
           </p>
           <ul class="actions">
             <li><a href="#one" class="button scrolly">Learn more</a></li>
@@ -94,7 +113,13 @@
                 effect.
               </p>
               <ul class="actions">
-                <li><a href="https://e-desset-recipe-generator.netlify.app/" class="button">Learn more</a></li>
+                <li>
+                  <a
+                    href="https://e-desset-recipe-generator.netlify.app/"
+                    class="button"
+                    >Learn more</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -113,7 +138,11 @@
                 easily view the current time of various cities worldwide.
               </p>
               <ul class="actions">
-                <li><a href="https://e-worldclock.netlify.app/" class="button">Learn more</a></li>
+                <li>
+                  <a href="https://e-worldclock.netlify.app/" class="button"
+                    >Learn more</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -195,7 +224,11 @@
           </div>
           <ul class="actions">
             <li>
-              <a href="https://glory-evi-portfolio.netlify.app/" class="button" style="background-color: blue;"
+              <a
+                href="https://glory-evi-portfolio.netlify.app/"
+                class="button"
+                target="_blank"
+                style="background-color: blue"
                 >Portfolio</a
               >
             </li>
@@ -214,7 +247,7 @@
           </p>
           <div class="split style1">
             <section>
-              <form method="post" action="#">
+              <form>
                 <div class="fields">
                   <div class="field half">
                     <label for="name">Name</label>
@@ -229,8 +262,10 @@
                     <textarea name="message" id="message" rows="5"></textarea>
                   </div>
                 </div>
-                <ul class="actions">
-                  <li><a href="" class="button submit">Send Message</a></li>
+                <ul>
+                  <li>
+                    <a class="button" onclick="sendMail()">Send Message</a>
+                  </li>
                 </ul>
               </form>
             </section>
