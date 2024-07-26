@@ -1,0 +1,34 @@
+h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+.last {
+    text-align: center;
+}
+@media (max-width: 430px) {
+  h1 {
+    text-align: center;
+  }
+    .okay {
+    line-height: 1;
+    text-align: center;
+   
+  }
+  .okay2 {
+    width: 200;
+  }
+  .glos {
+    padding: 8px;
+  }
+  .omo {
+  flex-wrap: wrap;  
+  }
+}
+@media (max-width: 375px) {
+.last2 {
+padding: 25px;
+margin: 25px;
+}
+}
